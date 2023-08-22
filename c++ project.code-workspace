@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "c++ project",
+			"path": "."
+		},
+		{
+			"name": "python project",
+			"path": "../python project"
+		}
+	],
+	"settings": {}
+}
