@@ -6,7 +6,6 @@ acwing 802. 离散化
 3. 去重函数背会
 */
 
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -55,17 +54,17 @@ int main() {
     //去重
     sort(alls.begin(),alls.end());
     alls.erase(unique(alls.begin(), alls.end()), alls.end());
-    
+    //现在alls是已经排好序了，是一个单调递增的没有重复的数组
     //处理插入
     for (auto item : add) {
         int x = find(item.first); //离散化之后的值
         a[x] += item.second; //在离散化之后的位置加上要加的数
     }
     
-    // 处理前缀和
+    //处理前缀和，构建一个新的s数组，是离散化后的a数组的前缀和数组
     for (int i = 1; i <= alls.size(); i ++) s[i] = s[i - 1] + a[i]; //得到前缀和
     
-    // 处理询问
+    //处理询问
     for (auto item: query) {
         int l = find(item.first), r = find(item.second); //先离散化左右区间
         cout << s[r] - s[l - 1] << endl; //输出离散化后得到的和
