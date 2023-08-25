@@ -10,7 +10,7 @@ acwing 801.
 
 using namespace std;
 
-int lowbit(int x) {
+int lowbit(int x) { //每次call，都会得到二进制中开头是最后一个1，结尾是末尾的一个二进制数
     return x & -x;
 }
 
