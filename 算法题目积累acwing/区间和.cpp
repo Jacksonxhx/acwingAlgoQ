@@ -17,7 +17,7 @@ typedef pair<int, int> PII; //定义一个pair，读入操作
 
 const int N = 300010; //n + 2m个坐标 所以是30w
 
-int n , m; //读入n行插入c，m行求和
+int n, m; //读入n行插入c，m行求和
 int a[N], s[N]; //a数组是存的数，s数组是前缀和
 
 vector<int> alls; //所有需要离散化的值
