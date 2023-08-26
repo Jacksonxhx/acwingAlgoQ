@@ -6,8 +6,6 @@ acwing 826. 单链表
 2. 特判当k = 0的时候
 */
 
-
-
 #include <iostream>
 
 using namespace std;
