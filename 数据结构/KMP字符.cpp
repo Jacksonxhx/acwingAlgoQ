@@ -8,6 +8,7 @@ acwing 831. KMP
 4. kmp匹配，下标从1开始
 5. 从头开始，判断s[i]和p[j + 1]是否相同，不同j跳next，继续比，直到其相同
 */
+
 #include <iostream>
 
 using namespace std;
