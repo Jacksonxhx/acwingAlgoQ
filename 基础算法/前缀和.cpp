@@ -31,7 +31,7 @@ int main() {
         int l, r;
         scanf("%d%d", &l, &r);
         printf("%d\n", s[r] - s[l - 1]); //区间和的计算
+        cout << endl;
     }
-
     return 0;
 }
