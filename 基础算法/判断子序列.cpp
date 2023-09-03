@@ -30,4 +30,4 @@ int main() {
     else puts("No");
     
     return 0;
-}
+} 
